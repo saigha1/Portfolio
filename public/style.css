@@ -1,0 +1,226 @@
+* {
+    margin:0px;
+    padding:0px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.menu{
+    background-color: #205E61;
+    justify-content: space-between;
+    display: flex;
+    height: 70px;
+    width: 100%;
+}
+
+.logo-actual{ /* or 50px */
+    width: 50px;
+    height: 50px; 
+    padding: 10px 20px;
+    
+
+}
+
+.menu-options{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.menu-options li{
+    color: #8BF5FA;
+    padding: 25px 15px 25px 15px;
+    margin: 0;
+    font-size: large;
+    line-height: 20px;
+}
+
+.menu-options li:hover{
+    background-color : #8BF5FA;
+    color: #205E61;
+    cursor: pointer;
+}
+
+.hero_one{
+    height: 400px;
+    width: 100%;
+    /* background-color: rgba(255, 0, 0, 0.3); */
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.hero_opacity{
+    display: flex;
+    padding: 0px;
+    background: rgb(0, 0, 0, 0.3);
+    width: 100%;
+    height: 400px;
+    z-index: 0;
+    position: absolute;
+}
+
+.profileImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: -30px;
+}
+.project{
+    padding-left: 200px;
+    /* background-color: red; */
+    width: 600px;
+    gap: 0px;
+
+}
+
+.project-options li{
+    background-color: yellow;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    border-radius: 20px 0 0 20px;
+    list-style: none;
+    width: 100%;
+    font-size: large;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    /* justify-content: center; */
+    text-align: center; 
+}
+
+.backgroundImage{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 550px;
+    padding: 0px;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%,0);
+    pointer-events: none;
+}
+
+
+/* An element with a higher z-index will be displayed in front of an element with a lower z-index. One thing to note is that z-index only works with positioned elements. */
+
+
+.LeetCode{
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    background:  #205E61;
+}
+.LTcontainer{
+    width: 70%;
+    padding: 60px;
+    background-color: none;
+    margin: auto; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.descriptive{
+   color: white;
+   padding: 0px;  
+}
+
+.descriptive h2{
+    padding-bottom: 25px;
+}
+
+.descriptive p{
+    width: 60%;
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+
+.stats{
+    display: flex;
+    gap: 40px;
+    
+}
+.info{
+    margin-right: 20px;
+}
+
+.attempted, .solved, .QToDo{
+    background-color: #8BF5FA;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+.stats p{
+    color: black;
+    text-align: center;
+    font-size: large;
+}
+
+span.numbers{
+    text-align: center;
+    /* background-color: red; */
+    padding: 5px;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.line{
+    border-bottom: 1px solid black;
+    display: block;
+    line-height: 100%;
+    margin: 6px;
+}
+.img{
+    padding: 30px 30px;
+    background: white;
+    border-radius: 15px;
+}
+
+.nextIdea{
+    padding: 230px 0px;
+    margin: 0px;
+    text-align: center;
+    background-color: #8BF5FA;
+    width: 100%;
+    
+}
+/* Make it Responsive.Get new ideas. Learn about CDN. then netflix with special feature then publish via google cloud. */
+/* Fix resume format on resume.lol */
+
+@media screen and (max-width: 768px) {
+    .descriptive p{
+        flex-wrap: wrap;
+        width: 70vw; 
+    }
+
+    .descriptive h2{
+        margin: auto;
+    }
+
+    .stats{
+        width: 75vw;
+        flex-direction: row;
+        gap: 20px;
+        margin: auto;
+        padding: 0px 10px;
+    }
+
+    .LTcontainer{
+        flex-direction: column;
+    }
+    
+    .img{
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+}
